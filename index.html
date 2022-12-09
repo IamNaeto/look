@@ -1,0 +1,159 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>LOOK</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <nav>
+        <div>
+            <img src="img/logo.png" class="logo" alt="logo">
+        </div>
+        <div class="nav-links">
+            <a href={% url "home" %}>Home</a>
+            <a href={% url "products" %}>Products</a>
+            <a href={% url "about" %}>About</a>
+            <a href="#contact">Contact</a>
+            <a href={% url "docs" %}>Docs</a>
+        </div>
+    </nav>
+
+<!-- Landing Intro Section -->
+    <section class="intro">
+        <h1>
+            GET THE RIGHT GADGET WITH YOUR BUDGET
+        </h1>
+        <p>Lorem ipsum dolor sit amet consectetur. Ultrices libero faucibus at orci in at risus fusce. Tortor nec amet non vulputate massa lectus faucibus amet cursus. Platea purus porta pellentesque cursus odio lectus sed.</p>
+
+        <button class="herobtn">Get Started</button> <button class="herobtn2">Learn More</button>
+    </section>
+<!-- Brands Section -->
+    <section class="brands">
+        <div class="brands-container">
+            <div class="brand-box text-box">
+                <h1>BREAKOUT
+                    BRANDS</h1>
+            </div>
+            <div class="brand-box">
+                <p>APPLE</p>
+                <img src="img/apple.png" alt="apple">
+            </div>
+            <div class="brand-box">
+                <p>SAMSUNG</p>
+                <img src="img/samsung.png" alt="samsung">
+            </div>
+        </div>
+
+        <div class="brands-container">
+            <div class="brand-box">
+                <p>GOOGLE</p>
+                <img src="img/google.png" alt="google">
+            </div>
+            <div class="brand-box">
+                <p>XIAOMI</p>
+                <img src="img/xiaomi.png" alt="xiaomi">
+            </div>
+            <div class="brand-box text-box2">
+                <h1>HOT RIGHT NOW</h1>
+            </div>
+        </div>
+
+        <div class="brands-container">
+            <div class="brand-box">
+                <p>SONY</p>
+                <img src="img/sony.png" alt="sony">
+            </div>
+            <div class="brand-box text-box3">
+                <h1>TRENDING NOW</h1>
+            </div>
+            <div class="brand-box">
+                <p>OPPO</p>
+                <img src="img/oppo.png" alt="oppo">
+            </div>
+        </div>
+    </section>
+
+    <!-- New Product Section -->
+    <section class="new-product">
+        <h2>NEW PRODUCTS</h2>
+      <div class="product-container">
+        <div class="product-box">
+            <img src="img/iphone13A.png" alt="">
+            <h3>Iphone 13</h3>
+            <p>Lorem ipsum dolor sit amet consectetur. Ultrices libero faucibus at orci in at risus fusce. </p>
+        </div>
+        <div class="product-box">
+            <img src="img/iphone13B.png" alt="">
+            <h3>Iphone 13</h3>
+            <p>Lorem ipsum dolor sit amet consectetur. Ultrices libero faucibus at orci in at risus fusce. </p>
+        </div>
+        <div class="product-box">
+            <img src="img/iphone13C.png" alt="">
+            <h3>Iphone 13</h3>
+            <p>Lorem ipsum dolor sit amet consectetur. Ultrices libero faucibus at orci in at risus fusce. </p>
+        </div>
+      </div>
+    </section>
+
+    <!-- Feature Section -->
+    <section class="feature">
+        <div class="feature-box">
+            <img src="img/check icon.png" alt="">
+            <h4>Feature One</h4>
+            <p>Lorem ipsum dolor sit amet consectetur. Ultrices libero faucibus at orci in at risus fusce. </p>
+        </div>
+
+        <div class="feature-box">
+            <img src="img/check icon.png" alt="">
+            <h4>Feature One</h4>
+            <p>Lorem ipsum dolor sit amet consectetur. Ultrices libero faucibus at orci in at risus fusce. </p>
+        </div>
+
+        <div class="feature-box">
+            <img src="img/check icon.png" alt="">
+            <h4>Feature One</h4>
+            <p>Lorem ipsum dolor sit amet consectetur. Ultrices libero faucibus at orci in at risus fusce. </p>
+        </div>
+    </section>
+
+    <!-- Signup Section -->
+    <section class="signup">
+        <div class="left">
+            <h2>Heading explaining the main benefit of our website</h2>
+            <p>Lorem ipsum dolor sit amet consectetur. Ultrices libero faucibus at orci in at risus fusce. Tortor nec amet non vulputate massa lectus faucibus amet cursus. Platea purus porta pellentesque cursus odio lectus sed.</p>
+        </div>
+        <div class="right">
+            <h1> 
+                SIGNUP
+                FOR
+                SMARTER
+                SHOPPING</h1>
+                <a href="#"><button class="herobtn">Sign Up</button></a>
+        </div>
+    </section>
+<!-- Get In Touch Section -->
+    <section class="getintouch">
+    <h2>Get In Touch</h2>
+    <p>Lorem ipsum dolor sit amet consectetur. Ultrices libero faucibus at orci in at risus fusce. Tortor nec amet non vulputate massa lectus faucibus amet cursus. Platea purus porta pellentesque cursus odio lectus sed.</p>
+    <form action="#">
+        <input type="email" placeholder="Email Address" class="form-input" required><input type="text" placeholder="Full Name" class="form-input" required> <input type="submit" value="Subscribe" class="subscribe">
+    </form>
+    </section>
+
+    <!-- Footer Section -->
+    <footer>
+        <div class="nav-links">
+            <a href={% url "home" %}>Home</a> <span>|</span>
+            <a href={% url "products" %}>Products </a><span>|</span>
+            <a href={% url "about" %}>About</a><span>|</span>
+            <a href="#contact">Contact</a><span>|</span>
+            <a href={% url "docs" %}>Docs</a>
+        </div>
+        <p>15662 Magodo Estate, Zuri Street, ZA 94103, Nigeria
+            © 2022 - Our Company, All rights reserved.</p>
+    </footer>
+</body>
+</html>
