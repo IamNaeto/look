@@ -138,6 +138,7 @@ h1 {
   width: 35%;
   padding: 10px 20px;
   margin-top: 60px;
+  border-radius: 5px 0 0 0;
 }
 .text-box2 {
   background-color: #8f1929;
@@ -533,6 +534,14 @@ footer p {
   }
   .brand-box {
     width: 100%;
+  }
+    .text-box3 h1, .text-box2 h1, .text-box h1 {
+      font-style: normal;
+      font-weight: 500;
+      font-size: 60px;
+      line-height: 70px;
+      width: 40%;
+    }
   }
   /* new product section styling */
   .new-product h2 {
