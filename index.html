@@ -1,5 +1,6 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
@@ -7,30 +8,38 @@
     <title>LOOK</title>
     <link rel="stylesheet" href="style.css">
 </head>
+
 <body>
     <nav>
         <div>
             <img src="img/logo.png" class="logo" alt="logo">
         </div>
-        <div class="nav-links">
+        <div class="nav-links" id="nav-links">
             <a href={% url "home" %}>Home</a>
             <a href={% url "products" %}>Products</a>
             <a href={% url "about" %}>About</a>
             <a href="#contact">Contact</a>
             <a href={% url "docs" %}>Docs</a>
         </div>
+        <div class="hamburger-menu">
+            <div class="ham-bar bar-top"></div>
+            <div class="ham-bar bar-mid"></div>
+            <div class="ham-bar bar-bottom"></div>
+        </div>
     </nav>
 
-<!-- Landing Intro Section -->
+    <!-- Landing Intro Section -->
     <section class="intro">
         <h1>
             GET THE RIGHT GADGET WITH YOUR BUDGET
         </h1>
-        <p>Lorem ipsum dolor sit amet consectetur. Ultrices libero faucibus at orci in at risus fusce. Tortor nec amet non vulputate massa lectus faucibus amet cursus. Platea purus porta pellentesque cursus odio lectus sed.</p>
+        <p>Lorem ipsum dolor sit amet consectetur. Ultrices libero faucibus at orci in at risus fusce. Tortor nec amet
+            non vulputate massa lectus faucibus amet cursus. Platea purus porta pellentesque cursus odio lectus sed.</p>
 
-        <button class="herobtn">Get Started</button> <button class="herobtn2">Learn More</button>
+        <a href="#"><button class="herobtn">Get Started</button></a> <a href="#"><button class="herobtn2">Learn
+                More</button></a>
     </section>
-<!-- Brands Section -->
+    <!-- Brands Section -->
     <section class="brands">
         <div class="brands-container">
             <div class="brand-box text-box">
@@ -79,23 +88,23 @@
     <!-- New Product Section -->
     <section class="new-product">
         <h2>NEW PRODUCTS</h2>
-      <div class="product-container">
-        <div class="product-box">
-            <img src="img/iphone13A.png" alt="">
-            <h3>Iphone 13</h3>
-            <p>Lorem ipsum dolor sit amet consectetur. Ultrices libero faucibus at orci in at risus fusce. </p>
+        <div class="product-container">
+            <div class="product-box">
+                <img src="img/iphone13A.png" alt="">
+                <h3>Iphone 13</h3>
+                <p>Lorem ipsum dolor sit amet consectetur. Ultrices libero faucibus at orci in at risus fusce. </p>
+            </div>
+            <div class="product-box">
+                <img src="img/iphone13B.png" alt="">
+                <h3>Iphone 13</h3>
+                <p>Lorem ipsum dolor sit amet consectetur. Ultrices libero faucibus at orci in at risus fusce. </p>
+            </div>
+            <div class="product-box">
+                <img src="img/iphone13C.png" alt="">
+                <h3>Iphone 13</h3>
+                <p>Lorem ipsum dolor sit amet consectetur. Ultrices libero faucibus at orci in at risus fusce. </p>
+            </div>
         </div>
-        <div class="product-box">
-            <img src="img/iphone13B.png" alt="">
-            <h3>Iphone 13</h3>
-            <p>Lorem ipsum dolor sit amet consectetur. Ultrices libero faucibus at orci in at risus fusce. </p>
-        </div>
-        <div class="product-box">
-            <img src="img/iphone13C.png" alt="">
-            <h3>Iphone 13</h3>
-            <p>Lorem ipsum dolor sit amet consectetur. Ultrices libero faucibus at orci in at risus fusce. </p>
-        </div>
-      </div>
     </section>
 
     <!-- Feature Section -->
@@ -123,24 +132,34 @@
     <section class="signup">
         <div class="left">
             <h2>Heading explaining the main benefit of our website</h2>
-            <p>Lorem ipsum dolor sit amet consectetur. Ultrices libero faucibus at orci in at risus fusce. Tortor nec amet non vulputate massa lectus faucibus amet cursus. Platea purus porta pellentesque cursus odio lectus sed.</p>
+            <p>Lorem ipsum dolor sit amet consectetur. Ultrices libero faucibus at orci in at risus fusce. Tortor nec
+                amet non vulputate massa lectus faucibus amet cursus. Platea purus porta pellentesque cursus odio lectus
+                sed.</p>
         </div>
         <div class="right">
-            <h1> 
+            <h1>
                 SIGNUP
                 FOR
                 SMARTER
                 SHOPPING</h1>
-                <a href="#"><button class="herobtn">Sign Up</button></a>
+            <a href="#"><button class="herobtn">Sign Up</button></a>
         </div>
     </section>
-<!-- Get In Touch Section -->
+    <!-- Get In Touch Section -->
     <section class="getintouch">
-    <h2>Get In Touch</h2>
-    <p>Lorem ipsum dolor sit amet consectetur. Ultrices libero faucibus at orci in at risus fusce. Tortor nec amet non vulputate massa lectus faucibus amet cursus. Platea purus porta pellentesque cursus odio lectus sed.</p>
-    <form action="#">
-        <input type="email" placeholder="Email Address" class="form-input" required><input type="text" placeholder="Full Name" class="form-input" required> <input type="submit" value="Subscribe" class="subscribe">
-    </form>
+        <div class="box">
+            <h2>Get In Touch</h2>
+            <p>Lorem ipsum dolor sit amet consectetur. Ultrices libero faucibus at orci in at risus fusce. Tortor nec
+                amet non vulputate massa lectus faucibus amet cursus. Platea purus porta pellentesque cursus odio lectus
+                sed.</p>
+        </div>
+        <div class="form">
+            <form action="#">
+                <input type="email" placeholder="Email Address" class="form-input" required><input type="text"
+                    placeholder="Full Name" class="form-input" required> <input type="submit" value="Subscribe"
+                    class="subscribe">
+            </form>
+        </div>
     </section>
 
     <!-- Footer Section -->
@@ -155,5 +174,9 @@
         <p>15662 Magodo Estate, Zuri Street, ZA 94103, Nigeria
             © 2022 - Our Company, All rights reserved.</p>
     </footer>
+
+
+    <script src="script.js"></script>
 </body>
+
 </html>
