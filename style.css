@@ -228,7 +228,7 @@ h1 {
   font-style: normal;
   font-weight: 600;
   font-size: 34px;
-line-height: 40px;
+  line-height: 40px;
   text-align: center;
   color: #000509;
   margin-bottom: 20px;
@@ -237,8 +237,8 @@ line-height: 40px;
 .feature p {
   font-style: normal;
   font-weight: 400;
-font-size: 24px;
-line-height: 28px;
+  font-size: 24px;
+  line-height: 28px;
   text-align: center;
   color: #010101;
 }
@@ -605,7 +605,7 @@ footer p {
   .signup p {
     font-size: 8px;
     line-height: 150%;
-    width: 300px;
+    width: 100%;
   }
   .right h1 {
     padding: 50px 0 0 50px;
