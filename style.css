@@ -83,6 +83,7 @@ h1 {
   text-align: center;
   color: #fef7f7;
   margin-right: 20px;
+  transition: 0.5s;
 }
 .herobtn:hover {
   background-color: transparent;
@@ -101,6 +102,7 @@ h1 {
   line-height: 29px;
   text-align: center;
   color: #017ecd;
+  transition: 0.5s;
 }
 .herobtn2:hover {
   background-color: transparent;
@@ -349,6 +351,7 @@ h1 {
   border: 2px solid #017ecd;
   color: #fff;
   font-size: 18px;
+  transition: 0.5s;
 }
 .subscribe:hover {
   background-color: transparent;
